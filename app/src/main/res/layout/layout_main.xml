@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hugh.recycleviewwithslideanimation.utils.MyLineatLayout
+    android:id="@+id/myLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#18B4ED"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/head"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#ffffff"
+        android:id="@+id/main_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+</com.hugh.recycleviewwithslideanimation.utils.MyLineatLayout>
