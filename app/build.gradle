@@ -35,4 +35,6 @@ dependencies {
     compile 'com.android.support:design:23.1.0'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.github.orhanobut:logger:1.12'
+    compile 'com.mikhaellopez:circularimageview:2.0.2'
+    compile files('libs/pinyin4j-2.5.0.jar')
 }

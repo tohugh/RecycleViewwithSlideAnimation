@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.hugh.recycleviewwithslideanimation.R;
 import com.nineoldandroids.view.ViewHelper;
 
 /**
@@ -78,6 +79,22 @@ public class SlideMenu extends FrameLayout {
         }
         menuView = getChildAt(0);
         mainView = getChildAt(1);
+
+        //给ivhead增加点击事件，打开menu
+        initIVClick();
+    }
+
+    /*
+    * 给ivhead增加点击事件，打开menu
+    * */
+    private void initIVClick() {
+        View iv_head = mainView.findViewById(R.id.iv_head);
+        iv_head.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                open();
+            }
+        });
     }
 
     @Override

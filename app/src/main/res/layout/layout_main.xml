@@ -10,6 +10,7 @@
     tools:showIn="@layout/activity_main">
 
     <ImageView
+
         android:id="@+id/iv_head"
         android:layout_width="35dp"
         android:layout_height="35dp"
@@ -18,10 +19,34 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/head"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:background="#ffffff"
-        android:id="@+id/main_recycleview"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/currentWord"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            android:background="#aaaa"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="35sp"/>
+
+        <com.hugh.recycleviewwithslideanimation.ui.widgets.QuickIndexBar
+            android:id="@+id/quickIndexBar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#949292"/>
+
+    </RelativeLayout>
 </com.hugh.recycleviewwithslideanimation.utils.MyLineatLayout>
